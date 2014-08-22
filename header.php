@@ -73,7 +73,7 @@
         </a>
         <ul class="submenu">
           <li><a href="#">Inbox Messages</a></li>
-          <li><a href="#">Usuarios</a></li>
+          <li><a href="usuariosList.php">Usuarios</a></li>
           <li><a href="#">Categorias</a></li>
           <li><a href="#">Subcategorias</a></li>
           <li><a href="#">Steps to launch</a></li>
