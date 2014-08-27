@@ -28,7 +28,7 @@ if (isset($_REQUEST["password"])) {
 if ($accion == "login") {
   try {
     $bd = new BD();
-    $sql = "Select us_user,us_pass from usuarios where us_user=? and us_pass=?";
+    $sql = "Select usua_cuenta,usua_contrasena from usuario where usua_cuenta=? and usua_contrasena=password(?)";
     $parametros = array($idUsuario, $password);
     $campos = $bd->select($sql, $parametros);
     if ($rs = $campos->fetch()) {

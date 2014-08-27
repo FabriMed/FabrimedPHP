@@ -1,3 +1,6 @@
+<?php
+  require_once './secureadmin.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,6 +21,7 @@
 
           <div class="page-title">
             Inicio
+            <a href="http://wrapbootstrap.com/preview/WB0PH0GBL">Tema </a>
           </div>
         </div>
       </div>  

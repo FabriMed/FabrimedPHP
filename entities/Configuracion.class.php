@@ -17,7 +17,7 @@ class Configuracion {
   const NAME_DB="Fabrimed";
   //const NAME_DB = "pde";
   const USER_BD = "root";
-  const PASS_BD = "123456";
+  const PASS_BD = "";
 
 
   #Paginador
