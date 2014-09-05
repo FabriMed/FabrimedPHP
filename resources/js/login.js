@@ -5,7 +5,7 @@ $(document).ready(function(e) {
             url: "controller/loginController.php",
             data: {
                 'accion': encrypt('login'),
-                'id_usuario': encrypt($("#txtUser").val()),
+                'idUsuario': encrypt($("#txtUser").val()),
                 'password': encrypt($("#txtPass").val())
             },
             success: function(e) {

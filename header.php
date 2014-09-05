@@ -4,7 +4,7 @@
       <img src="resources/images/1-60c47167290e620ea8ef2aa01d40c05e.jpg" alt="1" class="avatar" />
 
       <span>
-        John Smith
+        <?php echo $_SESSION['NOMBRE']?>
         <i class="fa fa-chevron-down"></i>
       </span>
     </a>
