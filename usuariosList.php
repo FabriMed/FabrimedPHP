@@ -64,7 +64,7 @@ require_once './secureadmin.php';
           </div>
 
           <div class="row users-list">
-            <div class="col-md-12">
+            <div class="col-md-12" id="datos">
               <div class="row headers">
                 <div class="col-sm-2 header select-users">
                   <input type="checkbox">
@@ -96,6 +96,7 @@ require_once './secureadmin.php';
                   <label class="text-right"><a href="#">Signed up</a></label>
                 </div>
               </div>
+              
               <div class="row user">
                 <div class="col-sm-2 avatar">
                   <input type="checkbox" name="select-user">
@@ -118,6 +119,7 @@ require_once './secureadmin.php';
                   </div>
                 </div>
               </div>
+              
               <div class="row user">
                 <div class="col-sm-2 avatar">
                   <input type="checkbox" name="select-user">
@@ -501,5 +503,6 @@ require_once './secureadmin.php';
         </div>
       </div>
     </div>
+    <script src="resources/js/listUsuarios.js" type="text/javascript"></script>
   </body>
 </html>
