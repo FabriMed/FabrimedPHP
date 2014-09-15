@@ -17880,9 +17880,9 @@ a(e, !0)
                 t.extend(t.validator.defaults, e)
                 },
                 messages: {
-                required: "This field is required.",
+                required: "Este Campo es Requerido.",
                         remote: "Please fix this field.",
-                        email: "Please enter a valid email address.",
+                        email: "Por Favor Ingrese un Email Valido.",
                         url: "Please enter a valid URL.",
                         date: "Please enter a valid date.",
                         dateISO: "Please enter a valid date (ISO).",
@@ -27341,38 +27341,6 @@ $(".fix-scroll").length > 0 && $(".fix-scroll").hide().show()
         function () {
         var t = function () {
         $("body#sidebar").length && ($("html, body").css("height", "100%"), $(".main-sidebar").wrapInner("<div class='scroll-wrapper'></div>"))
-        };
-                $(document).on("ready page:load", t)
-        }(),
-        function () {
-        var t = function () {
-        $("#form").length && ($("#new-customer").validate({
-        rules: {
-        "customer[first_name]": {
-        required: !0
-        },
-                "customer[email]": {
-                required: !0,
-                        email: !0
-                },
-                "customer[address]": {
-                required: !0
-                },
-                "customer[notes]": {
-                required: !0
-                }
-        },
-                highlight: function (t) {
-                $(t).closest(".form-group").removeClass("success").addClass("error")
-                },
-                success: function (t) {
-                t.addClass("valid").closest(".form-group").removeClass("error").addClass("success")
-                }
-        }), $("#customer-tags").select2({
-        placeholder: "Select tags or add new ones",
-                tags: ["supplier", "lead", "client", "friend", "developer", "customer"],
-                tokenSeparators: [",", " "]
-        }), $(".mask-phone").mask("(999) 999-9999"), $(".mask-cc").mask("9999 9999 9999 9999"))
         };
                 $(document).on("ready page:load", t)
         }(),

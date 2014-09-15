@@ -28,7 +28,7 @@ if ((!isset($_SESSION['ID_USUARIO']))) {
   $sql = "select id_usuario from usuario where id_usuario=? ";
   $parametros = array($_SESSION["ID_USUARIO"]);
   $campos = $bd->ejecutar($sql, $parametros);
-  if ($rs = $campos->fetch()) {
+  if (!$rs = $campos->fetch()) {
     $archivo = "login.php";
     header("location: $archivo");
   }
