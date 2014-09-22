@@ -355,7 +355,7 @@ class BD {
   public function rollBack() {
     $this->_db->rollBack();
   }
-
+  
   public function __construct() {
     $this->_host = Configuracion::HOST_BD;
     $this->_dbName = Configuracion::NAME_DB;

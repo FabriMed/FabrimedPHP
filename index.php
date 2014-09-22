@@ -1,13 +1,17 @@
 <?php
 session_start();
-  require_once './secureadmin.php';
+require_once './secureadmin.php';
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Administración de Fabrimed</title>
-    <?php require_once './includes.php';?>
+    <?php require_once './includes.php'; ?>
+    <script src="resources/js/default.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    </script>
   </head>
   <body id="dashboard">
     <div id="wrapper">
