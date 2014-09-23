@@ -16,8 +16,8 @@ class Configuracion {
   const HOST_BD = "127.0.0.1";
   const NAME_DB="Fabrimed";
   //const NAME_DB = "pde";
-  const USER_BD = "root";
-  const PASS_BD = "";
+  const USER_BD = "eroco";
+  const PASS_BD = "eroco";
 
 
   #Paginador

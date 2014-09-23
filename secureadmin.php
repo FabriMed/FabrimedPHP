@@ -23,7 +23,7 @@ if ((!isset($_SESSION['ID_USUARIO']))) {
   header("location: $archivo");
   exit;
 } else {
-  require_once './entities/BD.class.php';
+  require_once '/entities/BD.class.php';
   $bd = new BD();
   $sql = "select id_usuario from usuario where id_usuario=? ";
   $parametros = array($_SESSION["ID_USUARIO"]);
