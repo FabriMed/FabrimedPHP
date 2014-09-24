@@ -64,20 +64,17 @@
     </ul>
   </div>
   <div class="menu-section">
-    <h3>Application</h3>
+    <h3>Aplicación</h3>
     <ul>
       <li class="option">
         <a href="#" data-toggle="sidebar">
-          <i class="ion-earth"></i> <span>App Pages</span>
+          <i class="ion-earth"></i> <span>Mantenedores</span>
           <i class="fa fa-chevron-down"></i>
         </a>
         <ul class="submenu">
-          <li><a href="#">Inbox Messages</a></li>
           <li><a href="usuariosList.php">Usuarios</a></li>
-          <li><a href="#">Categorias</a></li>
+          <li><a href="UI/Categorias/categoriaList.php">Categorias</a></li>
           <li><a href="#">Subcategorias</a></li>
-          <li><a href="#">Steps to launch</a></li>
-          <li><a href="#">Calendar</a></li>
         </ul>
       </li>
       <li class="option">
