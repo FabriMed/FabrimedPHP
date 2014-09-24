@@ -17,7 +17,7 @@ $(document).ready(function() {
 
           $.each(data[0].campos, function(key, value) {
             var imagen = $("<img>", {src: value.imagen, alt: "", width: "128px", heigth: "128px"});
-            var nombre = $("<div>", {"class": "name", html: value.nombre + " " + value.apellido});
+            var nombre = $("<a>", {"class": "name",href:"#", html: value.nombre + " " + value.apellido});
             var email = $("<div>", {"class": "email", html: value.email});
             var telefono = $("<div>", {"class": "email", html: value.telefono});
             var telefono2 = $("<div>", {"class": "email", html: value.telefono2});
