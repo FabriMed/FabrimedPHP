@@ -1,4 +1,4 @@
-<?php
+3<?php
 require_once './secureadmin.php';
 ?>
 <!DOCTYPE html>

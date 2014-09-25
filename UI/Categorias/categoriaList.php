@@ -58,6 +58,12 @@ require_once '../../secureadmin.php';
           </div>
 
           <div class="row users-list">
+            <div class="col-md-12" >
+              <div class="row headers" id="header"/>
+              <!--LISTA DE DATOS-->
+              <div id="datos"/>
+              <div id="paginador"/>
+              
             <div class="col-md-12" id="datos">
               
               <div class="row headers">
@@ -141,7 +147,7 @@ require_once '../../secureadmin.php';
               <div class="name">Richard Moore Stevens</div>
               <div class="name">richard@hotmail.com</div>
             </div>
-              
+            
             <div class="user col-sm-3 col-xs-6">
               <a href="#">
                 <img src="../../resources/images/1-60c47167290e620ea8ef2aa01d40c05e.jpg" alt="1">
@@ -157,6 +163,7 @@ require_once '../../secureadmin.php';
               <div class="email">Si</div>
             </div>
           </div>
+            </div>
         </div>
       </div>
     </div>
