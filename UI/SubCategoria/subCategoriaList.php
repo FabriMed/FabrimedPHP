@@ -92,7 +92,7 @@ require_once '../../secureadmin.php';
               </div>
               
               <div id="valores">
-              <!--
+              
               <div class="row user">
                 <div class="col-sm-2 avatar">
                   <input type="checkbox" name="select-user">
@@ -117,7 +117,7 @@ require_once '../../secureadmin.php';
                   <div class="email">Sí</div>
                 </div>
               </div>
-               -->
+              
               <div class="row pager-wrapper">
                 <div class="col-sm-12">
                   <ul class="pager">
@@ -168,6 +168,6 @@ require_once '../../secureadmin.php';
       </div>
     </div>
     
-     <script src="../../resources/js/UI/Categoria/listCategoria.js" type="text/javascript"></script>
+<!--     <script src="../../resources/js/UI/Categoria/listCategoria.js" type="text/javascript"></script>-->
   </body>
 </html>

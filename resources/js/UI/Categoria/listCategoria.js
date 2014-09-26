@@ -7,12 +7,12 @@ $(document).ready(function(){
       'accion': 'listar'
     },
     success: function(data, textStatus, jqXHR) {
-      
+      console.info(data);
       if (data[0].estado === "ok") {
         if (data[0].campos.length > 0) {
           
           $.each(data[0].header, function(key, value) {
-            var head = $("<div>", {"class": "col-sm-2 header hidden-xs"});
+            var head = $("<div>", {"class": "col-sm-4 header hidden-xs"});
             $(head).append($("<label>").append($("<a>", {href: "#", html: value})));
             $("#header").append($(head));
           });
@@ -22,11 +22,10 @@ $(document).ready(function(){
             var nombre = $("<a>", {"class": "name",href:"#", html: value.nombre});
             var vigente = $("<div>", {"class": "email", html: value.vigente});
 
-
             var row = $("<div>");
             $(row).addClass("row user");
-            $(row).append($("<div>", {"class": "col-sm-3 avatar"}).append(imagen));
-            $(row).append($("<div>", {"class": "col-sm-3"}).append(nombre));
+            $(row).append($("<div>", {"class": "col-sm-4 avatar"}).append(imagen));
+            $(row).append($("<div>", {"class": "col-sm-4"}).append(nombre));
             $(row).append($("<div>", {"class": "col-sm-4"}).append(vigente));
             $("#datos").append($(row));
 
@@ -41,22 +40,25 @@ $(document).ready(function(){
       }
     },
     error: function(jqXHR, textStatus, errorThrown) {
-
+      window.alert("error");
+//      console.info(textStatus);
+//      console.info(jqXHR);
+//      console.info(textStatus);
     }
   });
 
-  var row = $("<div>");
-  $(row).addClass("row user");
-  $(row).append($("<div>",{"class":"col-sm-2 avatar"}).append($("<input>",{name:"select-user",type:"checkbox",id:"ckb"})).append($("<img>",{src:"../../resources/images/1-60c47167290e620ea8ef2aa01d40c05e.jpg",alt:"imagen de prueba cargada con js"})));
-  $(row).append($("<div>",{"class":"col-sm-5"}).append($("<a>",{"class":"name",href:"#",html:"Edwin Guamán"})));
-  $(row).append($("<div>",{"class":"col-sm-5"}).append($("<div>",{"class":"name",html:"es.aguaman@gmail.com"})));
-  $("#valores").append($(row));
-  
-  var rowSigAnt = $("<div>");
-  $(rowSigAnt).addClass("row pager-wrapper");
-  $(rowSigAnt).append($("<div>",{"class":"col-sm-12"}).append($("<ul>",{class:"pager"}).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"}))).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"})))));
-  $(rowSigAnt).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"})));
-  $(rowSigAnt).append($("<li>").append ($("<a>",{href:"#",html:"Siguiente"})));
-  $("#valores").append($(rowSigAnt));
+//  var row = $("<div>");
+//  $(row).addClass("row user");
+//  $(row).append($("<div>",{"class":"col-sm-2 avatar"}).append($("<input>",{name:"select-user",type:"checkbox",id:"ckb"})).append($("<img>",{src:"../../resources/images/1-60c47167290e620ea8ef2aa01d40c05e.jpg",alt:"imagen de prueba cargada con js"})));
+//  $(row).append($("<div>",{"class":"col-sm-5"}).append($("<a>",{"class":"name",href:"#",html:"Edwin Guamán"})));
+//  $(row).append($("<div>",{"class":"col-sm-5"}).append($("<div>",{"class":"name",html:"es.aguaman@gmail.com"})));
+//  $("#valores").append($(row));
+//  
+//  var rowSigAnt = $("<div>");
+//  $(rowSigAnt).addClass("row pager-wrapper");
+//  $(rowSigAnt).append($("<div>",{"class":"col-sm-12"}).append($("<ul>",{class:"pager"}).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"}))).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"})))));
+//  $(rowSigAnt).append($("<li>").append ($("<a>",{href:"#",html:"Anterior"})));
+//  $(rowSigAnt).append($("<li>").append ($("<a>",{href:"#",html:"Siguiente"})));
+//  $("#valores").append($(rowSigAnt));
   
 });

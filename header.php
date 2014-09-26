@@ -73,8 +73,8 @@
         </a>
         <ul class="submenu">
           <li><a href="usuariosList.php">Usuarios</a></li>
-          <li><a href="UI/Categorias/categoriaList.php">Categorias</a></li>
-          <li><a href="#">Subcategorias</a></li>
+          <li><a href="UI/Categoria/categoriaList.php">Categorias</a></li>
+          <li><a href="UI/SubCategoria/subCategoriaList.php">Subcategorias</a></li>
         </ul>
       </li>
       <li class="option">
