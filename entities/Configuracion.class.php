@@ -17,7 +17,7 @@ class Configuracion {
   const NAME_DB="Fabrimed";
   //const NAME_DB = "pde";
   const USER_BD = "eroco";
-  const PASS_BD = "eroco";
+  const PASS_BD = "";
 
 
   #Paginador

@@ -18,6 +18,7 @@ if ($_REQUEST["accion"]) {
 }
 
 if ($accion == "listar") {
+  print('entre');
   try {
     $bd = new BD();
     $res = $bd->select($sql, $parametros);
