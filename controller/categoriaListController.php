@@ -8,7 +8,7 @@ $campos = array();
 $header = array();
 $parametros = array();
 $sql = "SELECT id_categoria, cate_nombre, cate_vigente, cate_imagen "
-       ." FROM categoria where 1=1";
+       ." FROM categoria WHERE 1";
 
 if ($_REQUEST["accion"]) {
   $accion = $_REQUEST["accion"];
@@ -20,7 +20,7 @@ if ($accion == "listar") {
   try {
     $bd = new BD();
     $res = $bd->select($sql, $parametros);
-    if ($rs = $res->fetch()) {
+    if ($rs  = $res->fetch()) {
       $estado = "ok";
       $campos[] = array(
           "id_categoria" => $rs["id_categoria"],
@@ -30,16 +30,17 @@ if ($accion == "listar") {
       );
       $header=array("","Nombre Categoria","Vigencia");
     }
+
   } catch (Exception $e) {
     $estado = "error";
     $mensaje = $e->getMensaje();
   }
   $respuesta[] = array("estado" => $estado, "mensaje" => $mensaje, "campos" => $campos, "header" => $header);
-
-  print($campos);
  }
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Fecha en el pasado
 header("Content-type: application/json");
 $respuesta = json_encode($respuesta);
+
 echo $respuesta;
+
