@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Login - Admin Fabrimed</title>
+    <title>Login - Admin TuIngenio</title>
     <meta name="description" content="User login page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!-- bootstrap & fontawesome -->
@@ -38,7 +38,7 @@
                   <span class="red">Administración</span>
                   <span class="white" id="id-text2">del Sistema</span>
                 </h1>
-                <h4 class="blue" id="id-company-text">&copy; Fabrimed</h4>
+                <h4 class="blue" id="id-company-text">&copy; TuIngenio</h4>
               </div>
 
               <div class="space-6"></div>
@@ -148,7 +148,7 @@
 
               </div>
 
-              <div class="navbar-fixed-top align-right">
+              <div class="navbar-fixed-top align-right" style="display:none">
                 <br />
                 &nbsp;
                 <a id="btn-login-dark" href="#">Dark</a>
@@ -189,7 +189,7 @@
         document.write("<script src='jquery.mobile.custom.min.js'/*tpa=http://www.eguaman.cl/Fabrimed/resources/js/lib/jquery/jquery.mobile.custom.min.js*/>" + "<" + "/script>");
     </script>
     <script src="resources/js/functions.js" type="text/javascript"></script>
-    <script src="resources/js/login.js" type="text/javascript"></script>
+    <script src="resources/js/login.js?v=3" type="text/javascript"></script>
     <!-- inline scripts related to this page -->
     <script type="text/javascript">
       jQuery(function($) {

@@ -6,7 +6,7 @@ require_once './secureadmin.php';
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Administración de Fabrimed</title>
+    <title>Administración de Tu Ingenio</title>
     <?php require_once './includes.php'; ?>
     <script src="resources/js/default.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -25,8 +25,8 @@ require_once './secureadmin.php';
           </div>
 
           <div class="page-title">
-            Inicio
-            <a href="http://wrapbootstrap.com/preview/WB0PH0GBL">Tema </a>
+            <b>Inicio : <font style="color:blue">Bienvenidos al administrador de sistema TuIngenio.</font></b>
+            
           </div>
         </div>
       </div>  

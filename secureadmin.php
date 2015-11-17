@@ -3,10 +3,10 @@
 if (!isset($_SESSION['ID_USUARIO'])) {
   session_start();
 }
-header("Expires: Thu, 01 Jan 2004 00:00:01 GMT");              // Fecha en el pasado
-header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); // Siempre modificado
-header("Cache-Control: no-cache, must-revalidate");            // HTTP/1.1
-header("Pragma: no-cache");
+//header("Expires: Thu, 01 Jan 2004 00:00:01 GMT");              // Fecha en el pasado
+//header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); // Siempre modificado
+//header("Cache-Control: no-cache, must-revalidate");            // HTTP/1.1
+//header("Pragma: no-cache");
 
 if ((!isset($_SESSION['ID_USUARIO']))) {
   $archivo = "login.php";
@@ -23,10 +23,10 @@ if ((!isset($_SESSION['ID_USUARIO']))) {
   header("location: $archivo");
   exit;
 } else {
-  require_once '/entities/BD.class.php';
+  require_once './entities/BD.class.php';
   $bd = new BD();
-  $sql = "select id_usuario from usuario where id_usuario=? ";
-  $parametros = array($_SESSION["ID_USUARIO"]);
+  $sql = "select id_usuario from usuarios where id_usuario=".$_SESSION["ID_USUARIO"]." ";
+  $parametros = array();
   $campos = $bd->ejecutar($sql, $parametros);
   if (!$rs = $campos->fetch()) {
     $archivo = "login.php";

@@ -13,20 +13,30 @@
  */
 class Configuracion {
 
-  const HOST_BD = "127.0.0.1";
-  const NAME_DB="Fabrimed";
-  //const NAME_DB = "pde";
-  const USER_BD = "eroco";
-  const PASS_BD = "";
+  /*TU INGENIO*/
+  /*
+  const HOST_BD="127.0.0.1";
+  const NAME_DB="ctu12466_tuingenio";
+  const USER_BD="ctu12466_eroco";
+  const PASS_BD="12345678a";
+  const RAIZ="http://www.tuingenio.cl/admin";
+  */
+
+  /*LOCALHOST*/
+  
+	const HOST_BD="127.0.0.1";
+  const NAME_DB="tuingenio";
+	const USER_BD="root";
+	const PASS_BD="";
+  const RAIZ="http://localhost:8080/TuIngenio";
+  
 
 
   #Paginador
   const MAXREGSPERPAGE = 10; //Cantidad Maxima de registros por p�gina
   const MAXPAGESPERPAGER = 20; //Cantidad M�xima de paginas mostradas por el paginador
   #Otros parametros
-  const TITULO = ".:: Administrador de Fabrimed ::.";
+  const TITULO = ".:: Administrador de TuIngenio ::.";
   const DEBUG = 0;
-  const RAIZ = "http://localhost/Fabrimed";
 
-  //const RAIZ="http://www.eguaman.cl/Fabrimed";
 }

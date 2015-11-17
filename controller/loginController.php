@@ -28,22 +28,30 @@ if (isset($_REQUEST["password"])) {
 if ($accion == "login") {
   try {
     $bd = new BD();
-    $sql = "Select id_usuario, usua_cuenta, usua_contrasena, usua_nombre, usua_apellido, usua_telefono, "
-            . "usua_email, usua_vigente from usuario where usua_cuenta=? and usua_contrasena=password(?)";
-    $parametros = array($idUsuario, $password);
+    $sql = "Select id_usuario, "
+            . "ca_username, "
+            . "ca_password, "
+            . "ca_nombre, "
+            . "ca_apellido, "
+            . "ca_telefono, "
+            . "ca_email, "
+            . "ca_esvigente "
+            . "from usuarios "
+            . "where ca_username='".$idUsuario."' and ca_password=password('".$password."')";
+    $parametros = array();
     $campos = $bd->select($sql, $parametros);
     if ($rs = $campos->fetch()) {
       $estado = "ok";
       $_SESSION['ID_USUARIO']=$rs["id_usuario"];
-      $_SESSION["USER"] = $rs["usua_cuenta"];
-      $_SESSION["NOMBRE"]     = $rs["usua_nombre"]." ".$rs["usua_apellido"];
-      $_SESSION["TELEFONO"]     = $rs["usua_telefono"];
-      $_SESSION["EMAIL"]= $rs["usua_email"];
-      $_SESSION["VIGENTE"]= $rs["usua_vigente"];
+      $_SESSION["CA_USERNAME"] = $rs["ca_username"];
+      $_SESSION["CA_NOMBRE"]     = $rs["ca_nombre"]." ".$rs["ca_apellido"];
+      $_SESSION["CA_TELEFONO"]     = $rs["ca_telefono"];
+      $_SESSION["CA_EMAIL"]= $rs["ca_email"];
+      $_SESSION["CA_ESVIGENTE"]= $rs["ca_esvigente"];
       
     } else {
       $estado = "error";
-      $mensaje[] = array("user" => "User y Password incorrectos", "admin" => "");
+      $mensaje[] = array("user" => "Usuario y Contraseña incorrectos", "admin" => "","sql" => $sql);
     }
   } catch (MyException $e) {
     $estado = "error";

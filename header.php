@@ -4,7 +4,7 @@
       <img src="resources/images/1-60c47167290e620ea8ef2aa01d40c05e.jpg" alt="1" class="avatar" />
 
       <span>
-        <?php echo $_SESSION['NOMBRE']?>
+        <?php echo $_SESSION['CA_NOMBRE']?>
         <i class="fa fa-chevron-down"></i>
       </span>
     </a>
@@ -12,8 +12,8 @@
       <li>
         <a href="#" >Configuración Cuenta</a>
       </li>
-      <li>
-        <a href="#" >Ayuda / Soporte</a>
+      <li style="display:none;">
+        <a href="#"  >Ayuda / Soporte</a>
       </li>
       <li>
         <a href="#">Cerrar Sesión</a>
@@ -24,12 +24,12 @@
     <h3>General</h3>
     <ul>
       <li class="option">
-        <a href="#" class="active">
+        <a href="index.php" class="active">
           <i class="ion-android-earth"></i> 
           <span>Inicio</span>
         </a>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-person-stalker"></i> <span>Lists &amp; Tables</span>
           <i class="fa fa-chevron-down"></i>
@@ -40,7 +40,7 @@
           <li><a href="#">Products (Filters)</a></li>
         </ul>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-stats-bars"></i> <span>Reports</span>
           <i class="fa fa-chevron-down"></i>
@@ -50,7 +50,7 @@
           <li><a href="#">Report sales</a></li>
         </ul>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-pricetags"></i> <span>Forms</span>
           <i class="fa fa-chevron-down"></i>
@@ -77,7 +77,7 @@
           <li><a href="UI/SubCategoria/subCategoriaList.php">Subcategorias</a></li>
         </ul>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-card"></i> <span>Pricing</span>
           <i class="fa fa-chevron-down"></i>
@@ -89,7 +89,7 @@
           <li><a href="#">Invoice</a></li>
         </ul>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-flash"></i> <span>Features</span>
           <i class="fa fa-chevron-down"></i>
@@ -111,7 +111,7 @@
     <ul>
       <li class="option">
         <a href="#" data-toggle="sidebar">
-          <i class="ion-person"></i> <span>My account</span>
+          <i class="ion-person"></i> <span>Mi Cuenta</span>
           <i class="fa fa-chevron-down"></i>
         </a>
         <ul class="submenu">
@@ -121,7 +121,7 @@
           <li><a href="#">Support</a></li>
         </ul>
       </li>
-      <li class="option">
+      <li class="option" style="display:none;">
         <a href="#" data-toggle="sidebar">
           <i class="ion-usb"></i> <span>Level Navigation</span>
           <i class="fa fa-chevron-down"></i>
@@ -143,7 +143,7 @@
       </li>
     </ul>
   </div>
-  <div class="bottom-menu hidden-sm">
+  <div class="bottom-menu hidden-sm" style="display:none;">
     <ul>
       <li><a href="#"><i class="ion-help"></i></a></li>
       <li>

@@ -6,7 +6,7 @@ require_once './secureadmin.php';
   <head>
     <meta charset="UTF-8">
     <title>Administración de Fabrimed - Usuarios</title>
-    <?php require_once './includes.php'; ?>
+    <?php require_once '././includes.php'; ?>
   </head>
   <body id='users'>
     <div id="wrapper">
