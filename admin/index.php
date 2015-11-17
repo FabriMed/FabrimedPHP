@@ -20,7 +20,7 @@ require_once './secureadmin.php';
 
       <div id="content">
         <div class="menubar">
-          <div class="sidebar-toggler visible-xs" chupalo>
+          <div class="sidebar-toggler visible-xs" chupaloooooooooooo>
             <i class="ion-navicon"></i>
           </div>
 
