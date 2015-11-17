@@ -8,7 +8,7 @@ $mensaje = "";
 $campos = array();
 $header = array();
 $parametros = array();
-$sql = "SELECT id_producto,pr_cantidad,pr_detalle,pr_esvigente,pr_fecha,pr_imgruta,pr_imgrutaoriginal,pr_precio,pr_usuario,productos.id_categoria,ca_categoria from productos inner join categorias on categorias.id_categoria = productos.id_categoria and ca_esvigente = 1";
+$sql = "SELECT id_producto,pr_cantidad,pr_detalle,pr_esvigente,pr_fecha,pr_imgruta,pr_imgrutaoriginal,pr_precio,pr_usuario,productos.id_categoria,ca_categoria from productos inner join categorias on categorias.id_categoria = productos.id_categoria and ca_esvigente = 1 and pr_esvigente = 1";
 
 if ($_REQUEST["accion"]) {
   $accion = $_REQUEST["accion"];
