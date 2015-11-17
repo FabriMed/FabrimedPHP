@@ -72,6 +72,7 @@
           <i class="fa fa-chevron-down"></i>
         </a>
         <ul class="submenu">
+          <li><a href="usuariosList.php">Productos</a></li>
           <li><a href="usuariosList.php">Usuarios</a></li>
           <li><a href="UI/Categoria/categoriaList.php">Categorias</a></li>
           <li><a href="UI/SubCategoria/subCategoriaList.php">Subcategorias</a></li>

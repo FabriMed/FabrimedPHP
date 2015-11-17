@@ -8,8 +8,7 @@ $mensaje = "";
 $campos = array();
 $header = array();
 $parametros = array();
-$sql = "SELECT id_usuario, usua_nombre, usua_apellido, usua_telefono, usua_telefono2, "
-        . "usua_email, usua_vigente, usua_imagen FROM usuario where 1=1";
+$sql = "SELECT us_apellido, us_email, us_esvigente, us_nombre, us_password, us_telefono, us_username, id_usuario FROM usuarios where 1=1";
 
 if ($_REQUEST["accion"]) {
   $accion = $_REQUEST["accion"];
@@ -26,13 +25,12 @@ if ($accion == "listar") {
       $estado = "ok";
       $campos[] = array(
           "id_usuario" => $rs["id_usuario"],
-          "nombre" => $rs["usua_nombre"],
-          "apellido" => $rs["usua_apellido"],
-          "telefono" => $rs["usua_telefono"],
-          "telefono2" => $rs["usua_telefono2"],
-          "email" => $rs["usua_email"],
-          "vigente" => $rs["usua_vigente"],
-          "imagen" => $rs["usua_imagen"]
+          "nombre" => $rs["us_nombre"],
+          "apellido" => $rs["us_apellido"],
+          "telefono" => $rs["us_telefono"],
+          "email" => $rs["us_email"],
+          "vigente" => $rs["us_vigente"],
+          "imagen" => $rs["us_imagen"]
       );
       $header=array("","Nombres","Email","Teléfono","Telefono 2","Vigente");
     }
